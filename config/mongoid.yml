@@ -1,0 +1,23 @@
+development:
+  # Configure available database clients. (required)
+  clients:
+    default:
+      database: inovamind_challenge_development
+      hosts:
+        - localhost:27017
+      options:
+        server_selection_timeout: 1
+
+  # Configure Mongoid specific options. (optional)
+  options:
+
+test:
+  clients:
+    default:
+      database: inovamind_challenge_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
