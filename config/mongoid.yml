@@ -4,19 +4,24 @@ development:
     default:
       database: inovamind_challenge_development
       hosts:
-        - localhost:27017
+        - db:27017
       options:
+        user: mongoroot
+        password: mongosecret
+        auth_source: admin
+        auth_mech: :scram
         server_selection_timeout: 1
 
   # Configure Mongoid specific options. (optional)
   options:
+
 
 test:
   clients:
     default:
       database: inovamind_challenge_test
       hosts:
-        - localhost:27017
+        - db:27017
       options:
         read:
           mode: :primary
