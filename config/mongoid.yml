@@ -4,7 +4,8 @@ development:
     default:
       database: inovamind_challenge_development
       hosts:
-        - db:27017
+        - db
+        # - localhost:27017
       options:
         user: mongoroot
         password: mongosecret

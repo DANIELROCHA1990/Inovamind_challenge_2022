@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InovamindChallenge</title>
+    <title>Inovamind Challenge</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,24 @@
   </head>
 
   <body>
-    <%= yield %>
+  <%= render 'shared/navbar' %> 
+     <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+
+     <section class ="section">
+      <div class="container">
+        <div class="columns">
+        <% if user_signed_in? %>
+          <%= render "quotes/quotes"%>
+        <%else%>
+          
+        <%end%>
+        </div>
+      </div>
+    </section>
+     
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

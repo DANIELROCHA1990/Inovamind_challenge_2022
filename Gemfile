@@ -9,6 +9,10 @@ gem 'pry'
 gem 'nokogiri'
 gem 'open-uri'
 gem 'mongoid', '~> 7.3', '>= 7.3.4'
+gem 'devise'
+gem 'bootstrap-sass'
+gem 'simple_form'
+gem 'bcrypt', '~> 3.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets

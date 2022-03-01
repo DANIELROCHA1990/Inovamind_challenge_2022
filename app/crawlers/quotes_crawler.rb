@@ -36,7 +36,7 @@ end
 # 3. criar controller api v1 quotes_controller ( add rota no routes) ok
 # 4. criar model quote ok
 # 5. criar action index ok
-# 6. na action index.
-# 6.1 pesquisar no banco a existencia da tag
-# 6.2 se existir, retornar JSON
-# 6.3 senão, Executar  params = QuotesCrawler.fetch_by_tag(tag) e criar novos registros de Quote
+# 6. na action index. ok 
+# 6.1 pesquisar no banco a existencia da tag ok
+# 6.2 se existir, retornar JSON ok
+# 6.3 senão, Executar  params = QuotesCrawler.fetch_by_tag(tag) e criar novos registros de Quote ok

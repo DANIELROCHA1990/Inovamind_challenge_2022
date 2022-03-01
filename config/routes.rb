@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'quotes/index'
+  devise_for :users
+  root to: 'pages#home'
 
   namespace :api do
     namespace :v1 do
