@@ -14,19 +14,6 @@
   <%= render 'shared/navbar' %> 
      <p class="notice"><%= notice %></p>
      <p class="alert"><%= alert %></p>
-
-     <section class ="section">
-      <div class="container">
-        <div class="columns">
-        <% if user_signed_in? %>
-          <%= render "quotes/quotes"%>
-        <%else%>
-          
-        <%end%>
-        </div>
-      </div>
-    </section>
-     
     <div class="container">
       <%= yield %>
     </div>

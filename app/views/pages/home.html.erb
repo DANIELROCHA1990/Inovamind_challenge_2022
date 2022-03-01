@@ -1,0 +1,5 @@
+<h1>Digite uma Tag</h1>
+<%= form_tag(api_v1_quotes_path, method: 'get') do%>
+<%= text_field_tag([:tag])%>
+<%= submit_tag ("Buscar")%>
+<%end%>
